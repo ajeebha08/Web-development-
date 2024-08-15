@@ -1,4 +1,4 @@
-// app.js
+
 document.getElementById('addTaskBtn').addEventListener('click', function() {
     const taskInput = document.getElementById('taskInput');
     const task = taskInput.value.trim();
