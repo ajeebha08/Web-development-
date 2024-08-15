@@ -1,0 +1,36 @@
+Android Development Projects using HTML, CSS, and JavaScript
+
+Overview:
+This repository contains a collection of Android development projects that have been built using web technologies such as HTML, CSS, and JavaScript. The projects included are a Stopwatch, a Tic-Tac-Toe Game, and a To-Do List. Each of these applications demonstrates the capability of building functional Android apps using web-based languages.
+
+
+Projects
+1. Stopwatch
+A simple and precise stopwatch application. The stopwatch allows users to start, stop, and reset the timer with ease. It was developed using:
+HTML: Structure of the app
+CSS: Styling and layout
+JavaScript: Timer logic, event handling
+
+
+
+
+2. Tic-Tac-Toe Game
+A classic Tic-Tac-Toe game where two players take turns marking the spaces in a 3×3 grid. The game includes features such as:
+Player Names: Users can input custom player names.
+Win Effects: Displaying emojis, chocolates, balloons, and a 3D confetti effect upon a win.
+Custom Background: Users can set a custom background image for the game.
+HTML: Game layout
+CSS: Game board styling
+JavaScript: Game logic and win conditions
+
+
+
+
+3. To-Do List
+A simple to-do list application that allows users to manage their daily tasks. The app includes:
+Add Tasks: Users can add tasks with descriptions.
+Mark as Complete: Users can mark tasks as completed.
+Delete Tasks: Users can remove tasks from the list.
+HTML: Structure of the list
+CSS: Styling and layout
+JavaScript: Task management logic
