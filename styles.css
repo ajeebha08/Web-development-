@@ -1,0 +1,138 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transform: rotateX(10deg);
+    position: relative;
+    z-index: 10;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#taskInput:focus {
+    transform: scale(1.05);
+}
+
+#addTaskBtn {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#addTaskBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;
+}
+
+#taskList li:hover {
+    transform: scale(1.02);
+}
+
+#taskList li input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#taskList li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#taskList li button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+#taskList li button.edit-btn {
+    background-color: #28a745;
+    margin-right: 5px;
+}
+
+#taskList li button.edit-btn:hover {
+    background-color: #218838;
+}
+
+.moving-background {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+    background-size: 400% 400%;
+    animation: moveBg 20s linear infinite;
+    z-index: 1;
+    top: -50%;
+    left: -50%;
+}
+
+@keyframes moveBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
