@@ -41,9 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         return false;
     }
-    
-
-    function showWinner(winner) {
+     function showWinner(winner) {
         winnerMessage.textContent = `${winner} wins! 🎉`;
         winnerMessage.style.display = "block";
         const celebration = document.createElement("div");
@@ -72,10 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
             currentPlayer = currentPlayer === "X" ? "O" : "X";
         }
     }
-    
-    
-    
-
     function resetGame() {
         board = ["", "", "", "", "", "", "", "", ""];
         cells.forEach(cell => {
