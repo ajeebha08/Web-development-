@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('tic\ tac\ .2.avif'); 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(195, 11%, 86%);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(9, 179, 194, 0.505);
+    width: 350px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.player-names input {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: hsl(219, 19%, 42%);
+    color: hsl(192, 22%, 5%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: rgb(81, 113, 130);
+}
+
+.hidden {
+    display: none;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(9, 6, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid hwb(200 85% 13%);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#resetButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(27, 47, 77);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#resetButton:hover {
+    background-color: #2d787f;
+}
+
+#winnerMessage {
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+}
+
+
+
+
+.celebration {
+    font-size: 48px;
+    margin-top: 10px;
+    display: none;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
