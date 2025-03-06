@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚑 First Aid Guide"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryColor"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <!-- First Aid Sections -->
+
+        <!-- Poisoning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardBackground"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="🧪"
+                android:textSize="60sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Poisoning"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary" />
+
+                <TextView
+                    android:id="@+id/poisoningGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔ Do not induce vomiting.\n✔ Seek medical help immediately."
+                    android:textSize="18sp"
+                    android:textColor="@color/textSecondary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/poisoningToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+
+        <!-- Bleeding -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardBackground"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="🩸"
+                android:textSize="60sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bleeding"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary" />
+
+                <TextView
+                    android:id="@+id/bleedingGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔ Apply direct pressure.\n✔ Use a clean cloth.\n✔ Seek help if severe."
+                    android:textSize="18sp"
+                    android:textColor="@color/textSecondary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bleedingToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Choking -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardBackground"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="🫁"
+                android:textSize="60sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choking"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary" />
+
+                <TextView
+                    android:id="@+id/chokingGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔ Encourage coughing.\n✔ Perform back blows.\n✔ Start CPR if needed."
+                    android:textSize="18sp"
+                    android:textColor="@color/textSecondary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chokingToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Fever (Newly Added) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardBackground"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="🤒"
+                android:textSize="60sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fever"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary" />
+
+                <TextView
+                    android:id="@+id/feverGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔ Drink fluids.\n✔ Use a cool cloth.\n✔ Rest well."
+                    android:textSize="18sp"
+                    android:textColor="@color/textSecondary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/feverToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/cardBackground"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="⚡"
+                android:textSize="60sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electric Shock"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textPrimary" />
+
+                <TextView
+                    android:id="@+id/electricShockGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✔ Turn off the power source.\n✔ Do not touch the person with bare hands.\n✔ Call emergency services immediately."
+                    android:textSize="18sp"
+                    android:textColor="@color/textSecondary"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/electricShockToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⬇"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

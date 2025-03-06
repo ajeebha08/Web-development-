@@ -1,0 +1,25 @@
+<resources>
+<!-- Background Color (Gradient-like Vibrant Blue) -->
+<color name="backgroundColor">#BBDEFB</color>
+
+<!-- Primary Color (Bright Royal Blue for Headings) -->
+<color name="primaryColor">#1976D2</color>
+
+<!-- Card Background (Soft Pastel Yellow for Contrast) -->
+<color name="cardBackground">#FFF9C4</color>
+
+<!-- Primary Text Color (Deep Charcoal for Readability) -->
+<color name="textPrimary">#1E1E1E</color>
+
+<!-- Secondary Text Color (Warm Orange for Details) -->
+<color name="textSecondary">#FF7043</color>
+
+<!-- Accent Color (Bright Green for Highlights) -->
+<color name="accentColor">#4CAF50</color>
+
+<!-- Button Background Color (Bold Red for Important Actions) -->
+<color name="buttonColor">#D32F2F</color>
+
+<!-- Toggle Arrow Color (Eye-catching Purple) -->
+<color name="toggleColor">#9C27B0</color>
+</resources>

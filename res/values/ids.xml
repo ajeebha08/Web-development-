@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="chokingGuide" type="id" />
+    <item name="chokingToggle" type="id" />
+    <item name="feverToggle" type="id" />
+    <item name="feverGuide" type="id" />
+    <item name="burnsGuide" type="id" />
+</resources>

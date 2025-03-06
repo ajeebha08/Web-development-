@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/cardBackground"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/emojiIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:text="🔥"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/topicTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Aid Topic"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"/>
+
+        <TextView
+            android:id="@+id/topicGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guide Information"
+            android:textSize="14sp"
+            android:textColor="@color/textSecondary"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⬇"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:padding="10dp"/>
+</LinearLayout>
